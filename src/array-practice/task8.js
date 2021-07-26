@@ -11,3 +11,11 @@
  * console.log(without([2, 1, 2, 3], 1, 2)) -> [3]
  * console.log(without([2, 1, 10, 20], 1, 2)) -> [10, 20]
  */
+export default function without(arr, ...args) {
+  return arr.filter(item => {
+    if (!args.includes(item)) {
+      return true;
+    }
+    return false;
+  });
+}

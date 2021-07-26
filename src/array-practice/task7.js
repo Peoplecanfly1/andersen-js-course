@@ -11,3 +11,10 @@
  * console.log(take([1, 2, 3], 5)); -> [1, 2, 3]
  * console.log(take([1, 2, 3], 2)); -> [1, 2]
  */
+
+export default function take(arr, index) {
+  if (index < arr.length) {
+    return arr.slice(0, index);
+  }
+  return arr;
+}
